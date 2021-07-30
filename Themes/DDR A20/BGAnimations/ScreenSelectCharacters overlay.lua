@@ -1,3 +1,5 @@
+-- DO NOT USE THIS IN ANOTHER THEME! STRICTLY PROHIBITED!
+
 local t=Def.ActorFrame{}
 
 -- Character List!
