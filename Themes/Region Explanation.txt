@@ -1,4 +1,6 @@
 //ENGLISH
+PLASE DON'T MOVE THIS FILE TO BGAnimations FOLDER!
+This region file have to stay in the Themes folder.
 You can change your region in the file "Region.lua"
 just replace your region, country, world.
 For example:
@@ -15,6 +17,8 @@ in Japanese
 InitCommand=cmd(settext,"コロンビア";zoom,1;y,1;maxwidth,70);
 
 //ESPAÑOL
+NO MUEVAS ESTE ARCHIVO A ALGUNA CARPETA DENTRO DE LOS TEMAS!
+Este archivo tiene que quedarse en la carpeta Themes.
 Puedes cambiar la región en la que te encuentres en el archivo "Region.lua" 
 Solo tienes que reemplazar la región en esta parte que viene en dicho archivo:
 
