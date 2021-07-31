@@ -1378,7 +1378,7 @@ elseif
 then
 	CharacterSize1=0.38
 elseif 
-	(string.match(Character_1, "(A)") or string.match(Character_1, "(X2)") or string.match(Character_1, "(X)") or string.match(Character_1, "(SN)") or string.match(Character_1, "(2ndMode)"))
+	(string.match(Character_1, "(Ace)") or string.match(Character_1, "(X2)") or string.match(Character_1, "(X)") or string.match(Character_1, "(SN)") or string.match(Character_1, "(2ndMode)"))
 then
 	CharacterSize1=1
 else
@@ -1403,7 +1403,7 @@ elseif
 then
 	CharacterSize2=0.38
 elseif 
-	(string.match(Character_2, "(A)") or string.match(Character_2, "(X2)") or string.match(Character_2, "(X)") or string.match(Character_2, "(SN)") or string.match(Character_2, "(2ndMode)"))
+	(string.match(Character_2, "(Ace)") or string.match(Character_2, "(X2)") or string.match(Character_2, "(X)") or string.match(Character_2, "(SN)") or string.match(Character_2, "(2ndMode)"))
 then
 	CharacterSize2=1
 else
@@ -1545,9 +1545,9 @@ if AnyoneHasChar() then
 
 
 		if BothPlayersEnabled() and 
-		(string.match(Character_1, "(A)") or string.match(Character_1, "(X2)") or string.match(Character_1, "(X)") or string.match(Character_1, "(SN)") or string.match(Character_1, "(2ndMode)")) 
+		(string.match(Character_1, "(Ace)") or string.match(Character_1, "(X2)") or string.match(Character_1, "(X)") or string.match(Character_1, "(SN)") or string.match(Character_1, "(2ndMode)")) 
 		and
-		(string.match(Character_2, "(A)") or string.match(Character_2, "(X2)") or string.match(Character_2, "(X)") or string.match(Character_2, "(SN)") or string.match(Character_2, "(2ndMode)"))
+		(string.match(Character_2, "(Ace)") or string.match(Character_2, "(X2)") or string.match(Character_2, "(X)") or string.match(Character_2, "(SN)") or string.match(Character_2, "(2ndMode)"))
 		then
 			BonesToLoad1=GAMESTATE:GetCharacter(player):GetCharacterDir().."Dance/"..Char1_Gen.." "..Choreo..".redir"
 			BonesToLoad2=GAMESTATE:GetCharacter(player):GetCharacterDir().."Dance/"..Char2_Gen.." "..Choreo..".redir"

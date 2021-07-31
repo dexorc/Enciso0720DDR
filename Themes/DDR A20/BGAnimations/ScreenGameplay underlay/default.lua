@@ -16,7 +16,7 @@ if GetUserPref("FirstReMIX_Cutin")=='true' then
 	--use ipairs here because i think it expects P1 is loaded before P2
 		for _, pn in ipairs(GAMESTATE:GetEnabledPlayers()) do
 			if string.find(GAMESTATE:GetCharacter(pn):GetDisplayName(), "(2ndMode)") or
-			   string.find(GAMESTATE:GetCharacter(pn):GetDisplayName(), "(A)") or
+			   string.find(GAMESTATE:GetCharacter(pn):GetDisplayName(), "(Ace)") or
 			   string.find(GAMESTATE:GetCharacter(pn):GetDisplayName(), "(SN)") or
 			   string.find(GAMESTATE:GetCharacter(pn):GetDisplayName(), "Rinon ") or
 			   string.find(GAMESTATE:GetCharacter(pn):GetDisplayName(), "(Old)") or

@@ -124,7 +124,7 @@ local function TestActorScroller()
 					self:zoom(10.7)
 				elseif string.find( value:GetDisplayName(), "PiX") then
 					self:zoom(5)
-				elseif string.match(value:GetDisplayName(), "(X)") or string.match(value:GetDisplayName(), "(X2)") or string.match(value:GetDisplayName(), "(A)") or string.match(value:GetDisplayName(), "(2ndMode)") then
+				elseif string.match(value:GetDisplayName(), "(X)") or string.match(value:GetDisplayName(), "(X2)") or string.match(value:GetDisplayName(), "(Ace)") or string.match(value:GetDisplayName(), "(2ndMode)") then
 					self:zoom(13) 
 				else 
 					self:zoom(10) 
