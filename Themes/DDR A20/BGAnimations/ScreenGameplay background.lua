@@ -466,6 +466,7 @@ elseif
 	CurrentSong == "革命パッショネイト" or
 	-- DDR A20 PLUS 
 	CurrentSong == "蒼が消えるとき" or
+	CurrentSong == "鋳鉄の檻" or
 	CurrentSong == "イノセントバイブル" or
 	CurrentSong == "ウソツキ横丁は雨模様" or 
 	CurrentSong == "御伽噺に幕切れを" or
