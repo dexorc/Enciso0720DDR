@@ -19,24 +19,22 @@ for i=1,2 do
 	};
 end
 
-for _,pn in pairs(GAMESTATE:GetEnabledPlayers()) do
-	if GAMESTATE:IsSideJoined(PLAYER_1) then 
+if GAMESTATE:GetEnabledPlayers(PLAYER_1) then 
 	grade[#grade+1] = loadfile(THEME:GetPathG("MusicWheelItem","Song NormalPart/grade1.lua"))(PLAYER_1)..{
 		InitCommand=function(s) s:x(0):zoomy(1.1) end,
 	};
 	diff[#diff+1] = loadfile(THEME:GetPathG("MusicWheelItem","Song NormalPart/diff1.lua"))(PLAYER_1)..{
 		InitCommand=function(s) s:xy(-74,-36) end,
 	};
-	end;
-	if GAMESTATE:IsSideJoined(PLAYER_2) then
+end;
+if GAMESTATE:GetEnabledPlayers(PLAYER_2) then
 	grade[#grade+1] = loadfile(THEME:GetPathG("MusicWheelItem","Song NormalPart/grade2.lua"))(PLAYER_2)..{
 		InitCommand=function(s) s:x(0):zoomy(1.1) end,
 	};
 	diff[#diff+1] = loadfile(THEME:GetPathG("MusicWheelItem","Song NormalPart/diff2.lua"))(PLAYER_2)..{
 		InitCommand=function(s) s:xy(74,-36) end,
 	};
-	end;
-end
+end;
 
 return Def.ActorFrame{
 	SetMessageCommand=function(self, params)
