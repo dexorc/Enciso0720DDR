@@ -19,7 +19,7 @@ for i=1,2 do
 	};
 end
 
-if GAMESTATE:GetEnabledPlayers(PLAYER_1) then 
+if GAMESTATE:IsSideJoined(PLAYER_1) then 
 	grade[#grade+1] = loadfile(THEME:GetPathG("MusicWheelItem","Song NormalPart/grade1.lua"))(PLAYER_1)..{
 		InitCommand=function(s) s:x(0):zoomy(1.1) end,
 	};
@@ -27,7 +27,7 @@ if GAMESTATE:GetEnabledPlayers(PLAYER_1) then
 		InitCommand=function(s) s:xy(-74,-36) end,
 	};
 end;
-if GAMESTATE:GetEnabledPlayers(PLAYER_2) then
+if GAMESTATE:IsSideJoined(PLAYER_2) then
 	grade[#grade+1] = loadfile(THEME:GetPathG("MusicWheelItem","Song NormalPart/grade2.lua"))(PLAYER_2)..{
 		InitCommand=function(s) s:x(0):zoomy(1.1) end,
 	};
